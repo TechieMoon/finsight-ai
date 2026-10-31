@@ -12,19 +12,25 @@ LLM에 기업 실적을 직접 물으면 기간, 연결/별도, 단위, 출처�
 
 ## 실행 화면
 
-다음은 2026-10-31 로컬 FastAPI와 Streamlit을 실행해 브라우저에서 촬영한 **MOCK 모드**입니다. 화면의 수치와 공시는 모두 **합성 테스트 데이터**이며 실제 기업 실적·실제 RAG 성능을 보여주는 자료가 아닙니다. 아래 빠른 시작 절차로 API 키 없이 재현할 수 있습니다.
+다음은 2026-10-31 등록된 API 키로 로컬 FastAPI와 Streamlit을 실행해 촬영한 **LIVE 모드**입니다. 두 기업의 재무는 OpenDART에서 실제 조회했습니다. 공시 검색은 기존에 실제 수집·임베딩한 SK하이닉스 2024년 공시 833개 청크를 사용하고, 질문 임베딩과 인용문 선택에 실제 OpenAI API를 호출했습니다. 실행 성공이 RAG 전체의 의미 정확도 검증 완료를 뜻하지는 않습니다. 키 값은 화면에 표시하지 않습니다.
 
-질문 입력과 계산 결과:
+질문 입력과 실제 재무 계산 결과:
 
-![MOCK 질문 입력과 재무 계산 결과](docs/screenshots/01-mock-comparison.jpg)
+![LIVE 재무 조회](docs/screenshots/01-live-financials.png)
 
-두 기업의 연간 비교표:
+두 기업의 실제 재무 비교표:
 
-![MOCK 기업별 재무 비교표](docs/screenshots/02-mock-table.jpg)
+![LIVE 재무 비교표](docs/screenshots/02-live-table.png)
 
-매출액·영업이익 차트와 출처 표시:
+실제 매출액·영업이익 추이와 DART 출처:
 
-![MOCK 비교 차트와 출처](docs/screenshots/03-mock-charts.jpg)
+![LIVE 비교 차트](docs/screenshots/03-live-charts.png)
+
+실제 공시 근거 발췌:
+
+![LIVE 공시 검색과 근거](docs/screenshots/04-live-rag.png)
+
+키 없는 Mock 모드도 아래 빠른 시작으로 실행할 수 있습니다. Mock 수치는 합성 데이터이며 위 실제 화면과 구분합니다.
 
 ## 검증 상태
 
