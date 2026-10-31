@@ -41,6 +41,51 @@ def test_xml_namespace_and_tail_text():
     )
 
 
+def test_real_dart_company_names_and_existing_entities_are_preserved():
+    # Minimal reproductions of the original SK hynix/Samsung parse failures.
+    raw = (
+        '<?xml version="1.0" encoding="UTF-8"?><DOCUMENT>'
+        '<TD>S&P</TD><TE>Samsung R&D Institute Ukraine (SRUKR)</TE>'
+        '<TD>SK E&S㈜</TD><P>100 &amp; 200 &#38; 300 &#x26; 400</P></DOCUMENT>'
+    ).encode()
+    assert clean_xml(raw) == (
+        "S&P Samsung R&D Institute Ukraine (SRUKR) SK E&S㈜ 100 & 200 & 300 & 400"
+    )
+
+
+def test_ampersand_repair_keeps_cdata_comments_and_attributes():
+    raw = (
+        b'<?xml version="1.0"?><DOCUMENT><!-- R&D -->'
+        b'<P LABEL="R&D">S&P</P><![CDATA[R&D <literal> &amp;]]></DOCUMENT>'
+    )
+    assert clean_xml(raw) == "S&P R&D <literal> &amp;"
+
+
+@pytest.mark.parametrize("entity", ["&unknown;", "&#0;", "&#x110000;"])
+def test_invalid_xml_entities_are_still_rejected(entity):
+    raw = f'<?xml version="1.0"?><DOCUMENT><P>S&P {entity}</P></DOCUMENT>'.encode()
+    with pytest.raises(DataError, match="XML 형식"):
+        clean_xml(raw)
+
+
+def test_ampersand_repair_does_not_recover_broken_tags():
+    with pytest.raises(DataError, match="XML 형식"):
+        clean_xml(b'<?xml version="1.0"?><DOCUMENT><P>S&P</DOCUMENT>')
+
+
+def test_dart_literal_heading_and_deletion_annotations_are_not_lost():
+    raw = (
+        '<?xml version="1.0"?><DOCUMENT><P>< TV 시장점유율 추이 ></P>'
+        '<P> (5) <삭제 2012.3.5> (6) 해외증권의 발행 (7) <삭제 1999.4.9></P>'
+        '<TD><이사ㆍ감사 전체의 보수현황></TD><TD>4.6점<평가항목>구성, 역할</TD>'
+        '<P>- 제11회 <ACI 세미나></P></DOCUMENT>'
+    ).encode()
+    assert clean_xml(raw) == (
+        '< TV 시장점유율 추이 > (5) <삭제 2012.3.5> (6) 해외증권의 발행 (7) <삭제 1999.4.9> '
+        '<이사ㆍ감사 전체의 보수현황> 4.6점<평가항목>구성, 역할 - 제11회 <ACI 세미나>'
+    )
+
+
 def test_chroma_roundtrip_scope_idempotency(tmp_path):
     config = Settings(_env_file=None, chroma_path=str(tmp_path), rag_max_distance=1.0)
     store = DisclosureStore(config)

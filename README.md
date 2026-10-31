@@ -2,11 +2,40 @@
 
 **공시 근거와 검증 가능한 계산을 결합한 금융 분석 Agent.** FnGuide 금융 AI Agent 개발 직무 지원을 위한 개인 포트폴리오입니다. FnGuide와 제휴하거나 FnGuide 데이터를 사용하는 서비스는 아닙니다.
 
-> 현재 상태(2026-10-29): 실제 데이터 Baseline을 실행했습니다. 연결 재무 원문 수치 12/12, 계산 가능한 비율 17/17이 자동 대조에서 일치했습니다. 실제 RAG 24개 질문을 실행했으나 의미적 적합성은 사람 검토 전입니다. 현재 공시 XML 정제에 실제 입력 회귀가 있어 수집 테스트는 실패합니다. P0 전체 완료나 운영 배포 완료로 주장하지 않습니다. [Baseline 결과와 재현 방법](docs/BASELINE.md)
+Python · FastAPI · LangGraph · Chroma · OpenAI API · Streamlit
+
+연결 재무 원문 12개 값과 계산 가능한 비율 17개를 자동 대조한 기록이 있습니다. 구현과 실제 데이터 검증의 범위는 아래 표와 [Baseline](docs/BASELINE.md)에 구분했습니다.
 
 ## 해결하려는 문제
 
 LLM에 기업 실적을 직접 물으면 기간, 연결/별도, 단위, 출처가 뒤섞일 수 있습니다. FinSight는 재무 수치를 OpenDART에서 가져오고 Python `Decimal`로 계산합니다. 실적 원인 질문은 기업·회계연도가 맞는 공시에서만 근거를 찾고, 근거가 없으면 답변을 제한합니다.
+
+## 실행 화면
+
+다음은 2026-10-31 로컬 FastAPI와 Streamlit을 실행해 브라우저에서 촬영한 **MOCK 모드**입니다. 화면의 수치와 공시는 모두 **합성 테스트 데이터**이며 실제 기업 실적·실제 RAG 성능을 보여주는 자료가 아닙니다. 아래 빠른 시작 절차로 API 키 없이 재현할 수 있습니다.
+
+질문 입력과 계산 결과:
+
+![MOCK 질문 입력과 재무 계산 결과](docs/screenshots/01-mock-comparison.jpg)
+
+두 기업의 연간 비교표:
+
+![MOCK 기업별 재무 비교표](docs/screenshots/02-mock-table.jpg)
+
+매출액·영업이익 차트와 출처 표시:
+
+![MOCK 비교 차트와 출처](docs/screenshots/03-mock-charts.jpg)
+
+## 검증 상태
+
+- 2026-10-31 XML 수정 후: 로컬 회귀 테스트 **76 passed, 2 skipped**, Ruff 통과. 기존 실제 연동 검사 2개도 별도로 실행해 재무 조회와 공시 수집·임베딩·검색을 확인했습니다.
+- 2026-10-29 실제 데이터 Baseline: 연결 재무 원문 수치 **12/12**, 계산 가능한 비율 **17/17** 자동 일치. 금융 정확도 전체나 사람 검토 결과를 의미하지 않습니다.
+- 실제 RAG 24문항의 사람 정답 검토는 미완료입니다. 저장 결과에서 주요 성공·한계 사례를 [제출 준비 검토](docs/SUBMISSION_REVIEW.md)에 별도로 정리했습니다.
+- **실제 공시 XML 정제 회귀를 수정**했습니다. 기존 원본 24개 모두 정제를 통과했으며, 회사명·본문의 `&`와 확인된 꺾쇠 표기를 보존하도록 처리했습니다. [수정 범위와 재현 근거](docs/XML_REPAIR.md)를 확인하세요. 운영 배포·MCP는 미구현입니다.
+
+## 담당 역할
+
+지원자는 요구사항 정의, 설계 방향 결정, Codex 구현 지시, 테스트 기준 검토 및 결과 확인을 담당했습니다. 실제 소스 코드 작성과 자동 테스트·API 연동 검사 실행은 Codex가 수행했습니다. 아래 수치는 프로젝트의 자동 검사 기록이며 지원자가 직접 코딩하거나 테스트를 실행했다는 의미가 아닙니다.
 
 ## 구현 범위
 
@@ -16,7 +45,7 @@ LLM에 기업 실적을 직접 물으면 기간, 연결/별도, 단위, 출처�
 | 연간 연결/별도 재무 조회 | fnlttSinglAcntAll.json, 11011, CFS/OFS | 연결 2023~2025 실제 원문 자동 대조; 별도는 오프라인 테스트 |
 | 매출·영업이익·이익률·전년 증가율 | Decimal, 결측/0/적자 처리 | 단위·통합 테스트 |
 | Agent | Typed State, 조건부 라우팅, 역할별 도구, 검증 | 실제 LangGraph 실행 |
-| 공시 수집 및 RAG | 공식 list.json/document.xml → 청크 → OpenAI → Chroma | 기존 실제 833개 청크로 검색 실행; 현재 XML 정제 수집 회귀 발견 |
+| 공시 수집 및 RAG | 공식 list.json/document.xml → 청크 → OpenAI → Chroma | XML 원본 24/24 정제, 실제 SK하이닉스 2024 수집·검색 검사 통과; 의미 평가 별도 |
 | 공시 답변 | LLM 구조화 출력으로 인용문 선택 → 원문 일치 검증 | 실제 24개 질문 실행, 채택 인용 6개 존재 확인; 의미적 지원은 검토 전 |
 | API/UI | FastAPI / Streamlit 비교표·차트·출처·오류 | 테스트 및 로컬 smoke 결과 참조 |
 | Docker/CI/클라우드/MCP | 미구현 | P0 실제 검증 후 P1 |
@@ -25,16 +54,16 @@ LLM에 기업 실적을 직접 물으면 기간, 연결/별도, 단위, 출처�
 
 ## 빠른 시작 — 키 없는 Mock 실행
 
-Python **3.11 권장**. 최초 로컬 검증은 설치되어 있던 Python 3.12.10으로 수행했습니다. Python 3.11 및 Linux 환경은 별도 검증이 필요합니다.
+Python **3.12**를 사용합니다. 2026-10-31 Windows Python 3.12.14에서 재검증했습니다. 지원 버전은 3.11 이상 3.13 미만이며, Python 3.11 및 Linux/macOS는 별도 검증이 필요합니다.
 
 ```powershell
-py -3.11 -m venv .venv
+py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 Copy-Item .env.example .env
 .\.venv\Scripts\python.exe scripts/doctor.py
 ```
 
-Python 3.11 런처가 없다면 설치된 호환 Python으로 `python -m venv .venv`를 사용할 수 있습니다. Linux/macOS에서는 `.venv/bin/python`으로 바꾸세요. 설정 진단은 키 존재 여부만 출력합니다.
+Python 3.12 런처가 없다면 설치된 호환 Python으로 `python -m venv .venv`를 사용할 수 있습니다. Linux/macOS에서는 `.venv/bin/python`으로 바꾸세요. 설정 진단은 키 존재 여부만 출력합니다.
 
 터미널 1:
 
@@ -51,6 +80,8 @@ Python 3.11 런처가 없다면 설치된 호환 Python으로 `python -m venv .v
 [대시보드](http://127.0.0.1:8501) · [API 문서](http://127.0.0.1:8000/docs)
 
 UI에 키를 입력하지 않습니다. UI 프로세스는 서버에 질문만 보내고 실제 모드는 서버 환경변수로 결정합니다. UI 서버 주소를 변경할 때는 `FINSIGHT_API_URL`을 프로세스 환경변수로 설정하세요.
+
+ChromaDB는 `finsight/rag.py`의 `chromadb.PersistentClient(path=config.chroma_path)`로 애플리케이션 프로세스 안에서 실행합니다. 기본 저장 위치는 `data/chroma`이며 Mock/실제 모드·임베딩 모델별 컬렉션을 분리합니다. Docker, 별도 Chroma 서버 또는 `HttpClient`는 필요하지 않습니다. 두 터미널은 같은 프로젝트 루트에서 실행하세요.
 
 ## 실제 데이터 모드
 
@@ -88,15 +119,18 @@ Mock에 해당 연도 데이터와 문서가 없어 원인을 추측하지 않�
 
 ## 테스트와 평가
 
+최신 2026-10-31 오프라인 pytest는 **76 passed, 2 skipped**입니다. 76개는 Mock·fixture를 사용하는 로컬 검사이며 외부 API 성공 수치가 아닙니다. 건너뛴 항목은 `test_live_dart`, `test_live_ingestion_and_semantic_search`입니다. 두 항목은 별도 키 주입 프로세스에서 테스트 함수를 직접 호출해 통과했으며, pytest 76개에 합산하지 않습니다. 각각 OpenDART 재무 조회, OpenDART 공시 수집 → OpenAI `text-embedding-3-small` → 로컬 Chroma 검색을 검사했습니다. 두 검사 자체는 답변 생성 모델이나 의미 정확도를 평가하지 않습니다.
+
+
 2026-10-29 Baseline: 기존 회귀 **56 passed, 2 skipped**, 기존 실제 연동 **1 passed, 1 failed**,
-평가 도구 **12 passed**. 현재 실제 수집 실패 원인과 검토가 필요한 RAG 지표는 [Baseline 문서](docs/BASELINE.md)에 기록했습니다. 서비스 워크플로·계산·API 계약은 변경하지 않았습니다.
+평가 도구 **12 passed**. 이는 개선 전의 과거 결과입니다. 당시 XML 정제 실패는 2026-10-31 해결했으며, 원본 24/24 정제와 별도 실제 연동 검사 2개 통과를 [XML 수정 기록](docs/XML_REPAIR.md)에 보존했습니다. [Baseline 문서](docs/BASELINE.md)의 실패는 과거 관측으로 유지합니다. 사람 정답에 기반한 RAG 의미 정확도 검증은 미완료입니다.
 
 2026-10-27 최종 로컬 실행: **53 passed, 2 skipped**, Mock 질문 평가 **24/24**,
 FastAPI/Streamlit HTTP smoke 통과, Ruff·compileall·pip check 통과.
 건너뛴 2개는 실제 공급자 연동 테스트입니다.
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q --junitxml=evaluation/pytest-results.xml
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=data/validation/pytest-results.xml
 .\.venv\Scripts\python.exe scripts/evaluate.py
 .\.venv\Scripts\python.exe scripts/smoke.py
 .\.venv\Scripts\python.exe -m ruff check finsight ui scripts tests
@@ -172,7 +206,7 @@ flowchart TD
 
 강조할 구현 성과는 **회계기간·중복 금액 검증**, **적자/0/결측을 고려한 계산**, **단일 상태 그래프의 조건부 도구 실행**, **기업·연도별 RAG 필터**, **출처와 원문 인용 일치 검증**, **오프라인 회귀 테스트와 실제 연동 테스트 분리**입니다.
 
-현재 라우팅은 명시적 규칙이며 자연어 전체를 이해하지 않습니다. 회계 기준은 연결/별도 및 통화를 구분하나 회계정책 변경이나 재작성 비교 가능성을 자동 보장하지 않습니다. 공시 인용은 관련 문장 발췌이며 완성도 높은 인과 요약이나 독립적 사실검증을 의미하지 않습니다.
+현재 라우팅은 명시적 규칙이며 자연어 전체를 이해하지 않습니다. 전년 대비·증가·성장 표현이 있을 때만 전년 데이터를 추가합니다. R03/R09처럼 당기 원인을 묻는 질문은 당기만 조회하므로 증가율이 미산출될 수 있습니다. 전년 영업손실에서 흑자로 전환하면 영업이익 증가율을 수치로 산출하지 않습니다. 회계 기준은 연결/별도 및 통화를 구분하나 회계정책 변경이나 재작성 비교 가능성을 자동 보장하지 않습니다. 공시 인용은 관련 문장 발췌이며 완성도 높은 인과 요약이나 독립적 사실검증을 의미하지 않습니다.
 
 [배포 준비 가이드](docs/DEPLOYMENT.md) · [한계 및 다음 단계](docs/LIMITATIONS.md)
 

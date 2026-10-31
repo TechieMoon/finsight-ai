@@ -1,0 +1,15 @@
+{
+  "executed_at": "2026-10-31T11:01:32.970452+00:00",
+  "mode": "live_opendart_and_openai",
+  "production_db_modified": false,
+  "cases": [
+    {
+      "test": "test_live_dart",
+      "status": "passed"
+    },
+    {
+      "test": "test_live_ingestion_and_semantic_search",
+      "status": "passed"
+    }
+  ]
+}

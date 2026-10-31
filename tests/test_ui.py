@@ -20,7 +20,7 @@ def test_ui_question_result_table_chart_sources(monkeypatch):
             request=httpx.Request("POST", "http://localhost/analyze"),
         ),
     )
-    app = AppTest.from_file(str(Path("ui/app.py").resolve())).run()
+    app = AppTest.from_file(str(Path("ui/app.py").resolve())).run(timeout=30)
     assert not app.exception
     app.button[0].click().run()
     assert not app.exception

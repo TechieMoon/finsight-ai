@@ -103,3 +103,10 @@ def test_separate_basis_decimal_format():
     result = Agent(Settings(_env_file=None)).run(Question(question="삼성전자 2025 별도 매출"))
     assert result.financials[0]["basis"] == "OFS"
     assert "105,600,000,000원" in result.answer
+
+
+def test_unavailable_growth_is_not_formatted_as_a_percentage():
+    result = Agent(Settings(_env_file=None)).run(Question(question="삼성전자 2024 매출"))
+    assert result.financials[0]["revenue_growth_pct"] is None
+    assert "매출 증가율 산출 불가," in result.answer
+    assert "산출 불가%" not in result.answer

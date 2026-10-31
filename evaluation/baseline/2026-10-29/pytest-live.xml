@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="11.182" timestamp="2026-10-29T18:39:55.936895+09:00" hostname="TechieMoon"><testcase classname="tests.test_live" name="test_live_dart" time="3.386" /><testcase classname="tests.test_live" name="test_live_ingestion_and_semantic_search" time="4.063"><failure message="finsight.finance.DataError: 공시 XML 형식을 읽을 수 없습니다. 원문 파일을 확인하세요.">..\..\..\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementTree.py:1706: in feed
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="11.182" timestamp="2026-10-29T18:39:55.936895+09:00"><testcase classname="tests.test_live" name="test_live_dart" time="3.386"/><testcase classname="tests.test_live" name="test_live_ingestion_and_semantic_search" time="4.063"><failure message="finsight.finance.DataError: 공시 XML 형식을 읽을 수 없습니다. 원문 파일을 확인하세요.">[local-python] in feed
     self.parser.Parse(data, False)
 E   xml.parsers.expat.ExpatError: not well-formed (invalid token): line 866, column 62
 
@@ -8,9 +9,9 @@ finsight\rag.py:24: in clean_xml
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .venv\Lib\site-packages\defusedxml\common.py:126: in fromstring
     parser.feed(text)
-..\..\..\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementTree.py:1708: in feed
+[local-python] in feed
     self._raiseerror(v)
-..\..\..\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementTree.py:1615: in _raiseerror
+[local-python] in _raiseerror
     raise err
 E   xml.etree.ElementTree.ParseError: not well-formed (invalid token): line 866, column 62
 

@@ -276,12 +276,13 @@ class Agent:
         sources = {r.source.receipt: r.source for r in state["records"]}
         for row in state["financials"]:
             fmt = lambda v: f"{Decimal(v):,.0f}" if v is not None else "결측"
+            fmt_percent = lambda v: f"{v}%" if v is not None else "산출 불가"
             lines.append(
                 f"{row['company']} {row['year']}년 ({row['basis']}): "
                 f"매출액 {fmt(row['revenue'])}원, 영업이익 {fmt(row['operating_profit'])}원, "
-                f"영업이익률 {row['operating_margin_pct'] or '산출 불가'}%. "
-                f"매출 증가율 {row['revenue_growth_pct'] or '산출 불가'}%, "
-                f"영업이익 증가율 {row['profit_growth_pct'] or '산출 불가'}% ({row['profit_growth_note']}). "
+                f"영업이익률 {fmt_percent(row['operating_margin_pct'])}. "
+                f"매출 증가율 {fmt_percent(row['revenue_growth_pct'])}, "
+                f"영업이익 증가율 {fmt_percent(row['profit_growth_pct'])} ({row['profit_growth_note']}). "
                 f"출처: {row['receipt']}"
             )
         evidence = []

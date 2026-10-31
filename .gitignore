@@ -57,3 +57,6 @@ Desktop.ini
 
 # Keep evaluation questions and reviewed baseline evidence in Git.
 # New runs should be reviewed for credentials and local paths before committing.
+
+# Intermediate submission experiments; reviewed final evidence is separate.
+/evaluation/submission-2026-10-31/

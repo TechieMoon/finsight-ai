@@ -1,0 +1,311 @@
+{
+  "executed_at": "2026-10-31T11:05:21.320633+00:00",
+  "kind": "baseline_xml_snapshot_regression",
+  "cases": [
+    {
+      "company": "삼성전자",
+      "year": 2022,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 621423,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 477
+    },
+    {
+      "company": "삼성전자",
+      "year": 2022,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 92242,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 49
+    },
+    {
+      "company": "삼성전자",
+      "year": 2022,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 102508,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 50
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 632118,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 529
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 83883,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 51
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 95579,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 50
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 95389,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 52
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 83693,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 52
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 660837,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 649
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 715506,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 972
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 89750,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 84
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 105848,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true
+      },
+      "bare_ampersands_escaped": 114
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2022,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 421661,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true,
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 165
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2022,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 99981,
+      "literal_business_terms": {},
+      "bare_ampersands_escaped": 0
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2022,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 108638,
+      "literal_business_terms": {},
+      "bare_ampersands_escaped": 0
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 450456,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true,
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 151
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 87154,
+      "literal_business_terms": {
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 2
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 94723,
+      "literal_business_terms": {
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 2
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 440994,
+      "literal_business_terms": {
+        "S&P": true,
+        "R&D": true,
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 179
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 85773,
+      "literal_business_terms": {
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 3
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 97670,
+      "literal_business_terms": {
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 3
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "file": "document-0.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 87289,
+      "literal_business_terms": {
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 1
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "file": "document-1.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 98580,
+      "literal_business_terms": {
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 1
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "file": "document-2.xml",
+      "sha256_matches_baseline": true,
+      "status": "passed",
+      "characters": 444854,
+      "literal_business_terms": {
+        "S&P": true,
+        "SK E&S": true
+      },
+      "bare_ampersands_escaped": 168
+    }
+  ],
+  "passed": 24,
+  "total": 24
+}

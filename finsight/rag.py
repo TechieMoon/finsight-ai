@@ -13,6 +13,40 @@ from finsight.finance import DataError
 from finsight.models import Source, now_iso
 
 
+def normalize_dart_xml_text(raw: bytes) -> bytes:
+    """Escape literal business text seen in original DART files, without tag recovery.
+
+    Leave references (including unknown ones), comments, CDATA and processing
+    instructions untouched so malformed structure/entities still fail parsing.
+    Only UTF-8/ASCII-compatible input is eligible for this narrow repair.
+    """
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw
+    if "\x00" in text:
+        return raw
+    protected = re.compile(r"(<!\[CDATA\[.*?\]\]>|<!--.*?-->|<\?.*?\?>)", re.DOTALL)
+    reference = r"&(?!(?:[A-Za-z_:][A-Za-z0-9_.:\-]*|#[0-9]+|#x[0-9A-Fa-f]+);)"
+    parts = protected.split(text)
+    for index in range(0, len(parts), 2):
+        parts[index] = re.sub(reference, "&amp;", parts[index])
+        # DART headings and deletion annotations use literal angle brackets.
+        # Do not turn arbitrary unknown/mismatched tags into text.
+        parts[index] = re.sub(r"<(?=\s)", "&lt;", parts[index])
+        parts[index] = re.sub(r"<(?=삭제\s+\d{4}\.\d{1,2}\.\d{1,2}>)", "&lt;", parts[index])
+        for label in (
+            "ACI 세미나",
+            "평가항목",
+            "최고감사인과정",
+            "이사ㆍ감사 전체의 보수현황",
+            "보수지급금액 5억원 이상 중 상위 5명의 개인별 보수현황",
+            "보수지급금액 5억원 이상인 이사ㆍ감사의 개인별 보수현황",
+        ):
+            parts[index] = parts[index].replace(f"<{label}>", f"&lt;{label}>")
+    return "".join(parts).encode("utf-8")
+
+
 def clean_xml(raw: bytes) -> str:
     if len(raw) > 40_000_000:
         raise DataError("개별 공시 문서가 너무 큽니다.")
@@ -21,7 +55,13 @@ def clean_xml(raw: bytes) -> str:
     # Parse real disclosures as XML. Keep HTML fragment support for legacy inputs.
     declared_xml = raw.lstrip(b"\xef\xbb\xbf \t\r\n").startswith(b"<?xml")
     try:
-        root = ElementTree.fromstring(raw)
+        try:
+            root = ElementTree.fromstring(raw)
+        except ElementTree.ParseError:
+            repaired = normalize_dart_xml_text(raw)
+            if repaired == raw:
+                raise
+            root = ElementTree.fromstring(repaired)
     except (ElementTree.ParseError, DefusedXmlException, ValueError) as exc:
         if declared_xml or re.match(rb"\s*<DOCUMENT(?:\s|>)", raw, re.IGNORECASE):
             raise DataError("공시 XML 형식을 읽을 수 없습니다. 원문 파일을 확인하세요.") from exc
