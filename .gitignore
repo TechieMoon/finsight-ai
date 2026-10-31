@@ -1,0 +1,59 @@
+# Local credentials (only the empty template belongs in Git)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/secrets.*.toml
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python environments, caches and build output
+.venv/
+venv/
+env/
+.tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Downloaded disclosures, vector stores and runtime files
+/data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.log
+logs/
+*.pid
+
+# Local editor, OS and agent settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+/.codex/
+/.agents/
+/.aws/
+
+# Keep evaluation questions and reviewed baseline evidence in Git.
+# New runs should be reviewed for credentials and local paths before committing.

@@ -1,0 +1,532 @@
+{
+  "started_at": "2026-10-29T09:38:21.626806+00:00",
+  "origin": "live_opendart",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "win32",
+    "packages": {
+      "langgraph": "1.2.18",
+      "openai": "2.54.0",
+      "chromadb": "1.5.9",
+      "httpx": "0.28.1",
+      "pydantic": "2.14.1",
+      "pytest": "9.1.1"
+    },
+    "service_sha256": {
+      "__init__.py": "6ee1fd3555965a775956fa218546fd8a3b0ad3f2bf205a0f99fe5d254fa4f171",
+      "api.py": "f1d733d21bd2c9065284a5bf5f68a49521742b4d13721c46fd0ee0547f0823b2",
+      "config.py": "f49c5f34f3d75ed74dd2b21e85c70f11075e5d4e880ee53cbe293ae45f95958d",
+      "dart.py": "897cfef2f93d442cc0880c460ff404f547285162442d41ffd35bcbc29eacb06e",
+      "finance.py": "41b2d2cdeb5dacc893affcd3773c3734f4099d4565e58f7743e04a2dc0198c93",
+      "mock.py": "80e4864cbd178d1b1c03f522dbb1364a4dd470fc6ba574445104d9e15c3e2159",
+      "models.py": "53fe8bc9934a519a157acf9044458990f42a1ca6d1fcbb748ac115d6a38ae352",
+      "rag.py": "4a2a15335fa2697a8c35aadd9340543f03763f9fcb4673536af2e13cb6a41930",
+      "workflow.py": "0f1e2b3ebe567e8de662d58502308c3fb5c1fa157eb049291718b95708df10b7"
+    }
+  },
+  "basis": "CFS",
+  "snapshots": [
+    {
+      "company": "삼성전자",
+      "stock_code": "005930",
+      "year": 2022,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:38:24.755847+00:00",
+      "financial": {
+        "company": "삼성전자",
+        "year": 2022,
+        "basis": "CFS",
+        "revenue": "302231360000000",
+        "operating_profit": "43376630000000",
+        "currency": "KRW",
+        "period_start": "2022-01-01",
+        "period_end": "2022-12-31",
+        "source": {
+          "title": "삼성전자 2022 사업보고서 재무제표",
+          "receipt": "20230307000542",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230307000542",
+          "company": "삼성전자",
+          "year": 2022,
+          "reference_date": "2022-12-31",
+          "retrieved_at": "2026-10-29T09:38:24.482670+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/005930-2022-CFS/document-0.xml",
+          "sha256": "00df9017a624f01a0234255fe00bb0da7b87e6aab6c62b97eca5dca619664b78"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2022-CFS/document-1.xml",
+          "sha256": "1e3d5b041aa9cdb1d0ef99d659e98777a18d82a874bd311b8be35a7253378344"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2022-CFS/document-2.xml",
+          "sha256": "b039e2ff52899f824d36d180e38135beafcad5fc2f91e07816659e84e02501e6"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/005930-2022-CFS"
+    },
+    {
+      "company": "삼성전자",
+      "stock_code": "005930",
+      "year": 2023,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:34:13.028815+00:00",
+      "financial": {
+        "company": "삼성전자",
+        "year": 2023,
+        "basis": "CFS",
+        "revenue": "258935494000000",
+        "operating_profit": "6566976000000",
+        "currency": "KRW",
+        "period_start": "2023-01-01",
+        "period_end": "2023-12-31",
+        "source": {
+          "title": "삼성전자 2023 사업보고서 재무제표",
+          "receipt": "20240312000736",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000736",
+          "company": "삼성전자",
+          "year": 2023,
+          "reference_date": "2023-12-31",
+          "retrieved_at": "2026-10-29T09:34:12.669054+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/005930-2023-CFS/document-0.xml",
+          "sha256": "fab047663d94f99a24f0177c9695874cbbc9ea54172b2769f159b3728a6a3c29"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2023-CFS/document-1.xml",
+          "sha256": "cfa928e4ec9a97bdb6fa53e0df1171bcd39d79a9771dd52c3cbc244ccdf6aa73"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2023-CFS/document-2.xml",
+          "sha256": "ed65a32729c98d733764a37e37164cb8000738a1aab02c65d1726b2942dc54d1"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/005930-2023-CFS"
+    },
+    {
+      "company": "삼성전자",
+      "stock_code": "005930",
+      "year": 2024,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:34:13.307935+00:00",
+      "financial": {
+        "company": "삼성전자",
+        "year": 2024,
+        "basis": "CFS",
+        "revenue": "300870903000000",
+        "operating_profit": "32725961000000",
+        "currency": "KRW",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "source": {
+          "title": "삼성전자 2024 사업보고서 재무제표",
+          "receipt": "20250311001085",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250311001085",
+          "company": "삼성전자",
+          "year": 2024,
+          "reference_date": "2024-12-31",
+          "retrieved_at": "2026-10-29T09:34:13.046470+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/005930-2024-CFS/document-0.xml",
+          "sha256": "2a0101b16c76c13d73bd0bf0d42c4378eacc330d5f88da9b3e4ac9d146dded18"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2024-CFS/document-1.xml",
+          "sha256": "37daa2846cc521530337f2a75053dc0c57c038c8039ef099f2dc80a906094914"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2024-CFS/document-2.xml",
+          "sha256": "b0682fd46de50ecc41f074bb43cb58cf574dd1750343710f169c58ab5066ad2f"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/005930-2024-CFS"
+    },
+    {
+      "company": "삼성전자",
+      "stock_code": "005930",
+      "year": 2025,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:34:13.620911+00:00",
+      "financial": {
+        "company": "삼성전자",
+        "year": 2025,
+        "basis": "CFS",
+        "revenue": "333605938000000",
+        "operating_profit": "43601051000000",
+        "currency": "KRW",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "source": {
+          "title": "삼성전자 2025 사업보고서 재무제표",
+          "receipt": "20260310002820",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820",
+          "company": "삼성전자",
+          "year": 2025,
+          "reference_date": "2025-12-31",
+          "retrieved_at": "2026-10-29T09:34:13.323308+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/005930-2025-CFS/document-0.xml",
+          "sha256": "107f3645e46dcd5af1ba7613d5480304c1ceaa98a89ac3a70fd113d23365d163"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2025-CFS/document-1.xml",
+          "sha256": "a9c54c3a826c919b98fcbf05384a54d66a55b8a7ef319c69d3d93a58631d5763"
+        },
+        {
+          "path": "data/baseline/2026-10-29/005930-2025-CFS/document-2.xml",
+          "sha256": "d31bac56ff210dfc52fc0b4d8457116371a21dd5203364e6367a8f5cf64dc60c"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/005930-2025-CFS"
+    },
+    {
+      "company": "SK하이닉스",
+      "stock_code": "000660",
+      "year": 2022,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:38:25.125401+00:00",
+      "financial": {
+        "company": "SK하이닉스",
+        "year": 2022,
+        "basis": "CFS",
+        "revenue": "44621568000000",
+        "operating_profit": "6809417000000",
+        "currency": "KRW",
+        "period_start": "2022-01-01",
+        "period_end": "2022-12-31",
+        "source": {
+          "title": "SK하이닉스 2022 사업보고서 재무제표",
+          "receipt": "20230321001209",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001209",
+          "company": "SK하이닉스",
+          "year": 2022,
+          "reference_date": "2022-12-31",
+          "retrieved_at": "2026-10-29T09:38:24.825299+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/000660-2022-CFS/document-0.xml",
+          "sha256": "9c1c1dbf53a9f87156552ecca561f56b9b29859a8dc873527f3d13c05748d968"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2022-CFS/document-1.xml",
+          "sha256": "830d67300beb877f71fa7924673df6fca7303c0927aa4d320ee1e7c97cfc3c77"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2022-CFS/document-2.xml",
+          "sha256": "03e71bb6186f7d8f08bae51fbd6fe9175332b83284b9fd5b3188ec5d3ce583ca"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "b62c9804c533b31a762ffc771d8a8422a38bb6225d2f6c34fc2c2fb81dcfa01d",
+      "directory": "data/baseline/2026-10-29/000660-2022-CFS"
+    },
+    {
+      "company": "SK하이닉스",
+      "stock_code": "000660",
+      "year": 2023,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:34:13.941394+00:00",
+      "financial": {
+        "company": "SK하이닉스",
+        "year": 2023,
+        "basis": "CFS",
+        "revenue": "32765719000000",
+        "operating_profit": "-7730313000000",
+        "currency": "KRW",
+        "period_start": "2023-01-01",
+        "period_end": "2023-12-31",
+        "source": {
+          "title": "SK하이닉스 2023 사업보고서 재무제표",
+          "receipt": "20240319000684",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240319000684",
+          "company": "SK하이닉스",
+          "year": 2023,
+          "reference_date": "2023-12-31",
+          "retrieved_at": "2026-10-29T09:34:13.622603+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/000660-2023-CFS/document-0.xml",
+          "sha256": "e276b64a391e79bd31ae06e074d8254c1406bf220ef8043c8e1a115e7fe10a1d"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2023-CFS/document-1.xml",
+          "sha256": "fbf76d481cbb5dba74e1c98f4620e9261aedb66e819271f3ba5d7dd9097f0aca"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2023-CFS/document-2.xml",
+          "sha256": "c715d5fb982117c9490379731f5adf1f54006f1460c0bc733ddb986cfcdfdebe"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/000660-2023-CFS"
+    },
+    {
+      "company": "SK하이닉스",
+      "stock_code": "000660",
+      "year": 2024,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:34:14.226519+00:00",
+      "financial": {
+        "company": "SK하이닉스",
+        "year": 2024,
+        "basis": "CFS",
+        "revenue": "66192960000000",
+        "operating_profit": "23467319000000",
+        "currency": "KRW",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "source": {
+          "title": "SK하이닉스 2024 사업보고서 재무제표",
+          "receipt": "20250319000665",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000665",
+          "company": "SK하이닉스",
+          "year": 2024,
+          "reference_date": "2024-12-31",
+          "retrieved_at": "2026-10-29T09:34:13.953686+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/000660-2024-CFS/document-0.xml",
+          "sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2024-CFS/document-1.xml",
+          "sha256": "45692eee9d894a4d7c1a8dfdaade14b63d1fac7be60a7ea047ecd1017b725fbe"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2024-CFS/document-2.xml",
+          "sha256": "a78002510b4e3aa418c779e6a757a1fe637d6de28f25c16f535eb3cc700eb2fd"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/000660-2024-CFS"
+    },
+    {
+      "company": "SK하이닉스",
+      "stock_code": "000660",
+      "year": 2025,
+      "basis": "CFS",
+      "origin": "live_opendart",
+      "captured_at": "2026-10-29T09:34:14.619206+00:00",
+      "financial": {
+        "company": "SK하이닉스",
+        "year": 2025,
+        "basis": "CFS",
+        "revenue": "97146675000000",
+        "operating_profit": "47206319000000",
+        "currency": "KRW",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "source": {
+          "title": "SK하이닉스 2025 사업보고서 재무제표",
+          "receipt": "20260317000635",
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000635",
+          "company": "SK하이닉스",
+          "year": 2025,
+          "reference_date": "2025-12-31",
+          "retrieved_at": "2026-10-29T09:34:14.246970+00:00",
+          "mode": "live"
+        }
+      },
+      "documents": [
+        {
+          "path": "data/baseline/2026-10-29/000660-2025-CFS/document-0.xml",
+          "sha256": "d6dada687b63ca0ff6b86074badebfc42af01086d2ceb09b617a77e61e83aa53"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2025-CFS/document-1.xml",
+          "sha256": "52e0d48029844834b4b452cd7c0a328f13840cddb052be0e9898fa6d20b42a43"
+        },
+        {
+          "path": "data/baseline/2026-10-29/000660-2025-CFS/document-2.xml",
+          "sha256": "a60977e3b5cc989ee5f056dab5540f2c04bf86cea811beabe9384c30d8990a0c"
+        }
+      ],
+      "service_parser_errors": [
+        {
+          "file": "document-0.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-1.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        },
+        {
+          "file": "document-2.xml",
+          "stage": "service_clean_xml",
+          "error_type": "DataError",
+          "status": "failed"
+        }
+      ],
+      "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory": "data/baseline/2026-10-29/000660-2025-CFS"
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-10-29T09:38:25.135433+00:00"
+}

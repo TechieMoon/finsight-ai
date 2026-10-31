@@ -1,0 +1,25 @@
+﻿id,group,question,status,route,retrieved_count,selected_quotes,explicit_refusal,human_review
+R01,direct_candidate,SK하이닉스 2024년 실적 변화 원인을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R02,direct_candidate,SK하이닉스 2024년 영업이익 흑자 전환의 원인을 공시로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R03,direct_candidate,SK하이닉스 2024년 AI 서버 수요가 실적에 미친 영향을 공시 근거로 설명해 줘.,completed,mixed,3,1,False,See rag-reviews.json; pending unless explicitly reviewed
+R04,direct_candidate,SK하이닉스 2024년 HBM 사업과 실적의 관계를 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R05,direct_candidate,SK하이닉스 2024년 DRAM 제품 구성과 실적의 관계를 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R06,direct_candidate,SK하이닉스 2024년 NAND 사업의 회복을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R07,direct_candidate,SK하이닉스 2024년 eSSD 수요와 실적의 관계를 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R08,direct_candidate,SK하이닉스 2024년 고부가가치 제품 판매가 수익성에 미친 영향을 공시 근거로 설명해 줘.,completed,mixed,3,1,False,See rag-reviews.json; pending unless explicitly reviewed
+R09,direct_candidate,SK하이닉스 2024년 메모리 제품 가격과 실적의 관계를 공시 근거로 설명해 줘.,completed,mixed,3,4,False,See rag-reviews.json; pending unless explicitly reviewed
+R10,direct_candidate,SK하이닉스 2024년 수요 회복과 영업실적의 관계를 경영진 설명에 근거해 알려줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R11,direct_candidate,SK하이닉스 2024년 재고와 시장 상황이 실적에 미친 영향을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R12,direct_candidate,SK하이닉스 2024년 생산 및 투자 전략을 실적과 연결하여 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R13,insufficient_candidate,SK하이닉스 2024년 HBM이 전체 영업이익에 기여한 정확한 비율을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R14,insufficient_candidate,SK하이닉스 2024년 특정 AI 고객 한 곳이 전체 매출에 기여한 정확한 금액을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R15,insufficient_candidate,SK하이닉스 2024년 HBM 제품의 개별 영업이익률을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R16,insufficient_candidate,SK하이닉스 2024년 AI 수요가 없었다면 영업이익이 얼마였을지 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R17,insufficient_candidate,SK하이닉스 2024년 실적 변화 중 HBM 효과와 가격 효과를 완전히 분리한 금액을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R18,insufficient_candidate,SK하이닉스 2024년 개별 고객별 제품 판매가격을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R19,insufficient_candidate,SK하이닉스 2024년 영업이익 변화가 전부 HBM 때문이라는 주장을 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R20,insufficient_candidate,SK하이닉스 2024년 모든 제품의 원가와 이익 기여도를 공시 근거로 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R21,unindexed_control,삼성전자 2024년 실적 변화 원인을 공시 근거로 설명해 줘.,completed,mixed,0,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R22,unindexed_control,SK하이닉스 2023년 실적 변화 원인을 공시 근거로 설명해 줘.,completed,mixed,0,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R23,unindexed_control,SK하이닉스 2025년 실적 변화 원인을 공시 근거로 설명해 줘.,completed,mixed,0,0,True,See rag-reviews.json; pending unless explicitly reviewed
+R24,partial_corpus_control,삼성전자와 SK하이닉스의 2024년 실적 변화 원인을 공시 근거로 각각 설명해 줘.,completed,mixed,3,0,True,See rag-reviews.json; pending unless explicitly reviewed

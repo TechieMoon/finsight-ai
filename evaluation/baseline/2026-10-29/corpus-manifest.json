@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-10-29T09:36:45.969164+00:00",
+  "origin": "existing_live_chroma",
+  "collection": "disclosures-77e20d668802ae96",
+  "embedding_model": "text-embedding-3-small",
+  "groups": {
+    "SK하이닉스:2024:20250319000665": 833
+  },
+  "chunks": 833,
+  "corpus_sha256": "29d0bdad6e496aa4839ae8d0e41746730eca3297d9e28a6625a6b3773f6b1b37",
+  "embedding_sha256": "efcd0b50fc10111a9f2b9b6847dfeab2522b762620bdd30a16193aa82ffc6a0b",
+  "index_path": "data/baseline/2026-10-29/chroma",
+  "note": "Copied existing vectors. No ingestion or financial correctness implied."
+}

@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-29T09:51:09.348845+00:00",
+  "files_scanned": 24,
+  "credential_findings": [],
+  "git_repository": false,
+  "git_history_scan": "not_performed_no_repository",
+  "raw_snapshot_directory": "data/ (excluded by existing .gitignore)",
+  "scope": "Known credential values and authentication query URLs in new report files; not a universal secret detector."
+}

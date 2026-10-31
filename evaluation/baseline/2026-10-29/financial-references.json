@@ -1,0 +1,346 @@
+[
+  {
+    "company": "삼성전자",
+    "year": 2022,
+    "basis": "CFS",
+    "receipt": "20230307000542",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 120,
+    "document_sha256": "00df9017a624f01a0234255fe00bb0da7b87e6aab6c62b97eca5dca619664b78",
+    "source_file": "data/baseline/2026-10-29/005930-2022-CFS/document-0.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구 분",
+      "제54기",
+      "제53기",
+      "제52기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "302,231,360",
+        "279,604,799",
+        "236,806,988"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "43,376,630",
+        "51,633,856",
+        "35,993,876"
+      ]
+    },
+    "context": [
+      "(단위 : 백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2022년 01월 01일 부터 2022년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 54 기)",
+    "revenue": "302231360000000",
+    "operating_profit": "43376630000000"
+  },
+  {
+    "company": "삼성전자",
+    "year": 2023,
+    "basis": "CFS",
+    "receipt": "20240312000736",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 126,
+    "document_sha256": "fab047663d94f99a24f0177c9695874cbbc9ea54172b2769f159b3728a6a3c29",
+    "source_file": "data/baseline/2026-10-29/005930-2023-CFS/document-0.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구 분",
+      "제55기",
+      "제54기",
+      "제53기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "258,935,494",
+        "302,231,360",
+        "279,604,799"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "6,566,976",
+        "43,376,630",
+        "51,633,856"
+      ]
+    },
+    "context": [
+      "(단위 : 백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2023년 01월 01일 부터 2023년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 55 기)",
+    "revenue": "258935494000000",
+    "operating_profit": "6566976000000"
+  },
+  {
+    "company": "삼성전자",
+    "year": 2024,
+    "basis": "CFS",
+    "receipt": "20250311001085",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 124,
+    "document_sha256": "b0682fd46de50ecc41f074bb43cb58cf574dd1750343710f169c58ab5066ad2f",
+    "source_file": "data/baseline/2026-10-29/005930-2024-CFS/document-2.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구 분",
+      "제56기",
+      "제55기",
+      "제54기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "300,870,903",
+        "258,935,494",
+        "302,231,360"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "32,725,961",
+        "6,566,976",
+        "43,376,630"
+      ]
+    },
+    "context": [
+      "(단위 : 백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2024년 01월 01일 부터 2024년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 56 기)",
+    "revenue": "300870903000000",
+    "operating_profit": "32725961000000"
+  },
+  {
+    "company": "삼성전자",
+    "year": 2025,
+    "basis": "CFS",
+    "receipt": "20260310002820",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 135,
+    "document_sha256": "107f3645e46dcd5af1ba7613d5480304c1ceaa98a89ac3a70fd113d23365d163",
+    "source_file": "data/baseline/2026-10-29/005930-2025-CFS/document-0.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구 분",
+      "제57기",
+      "제56기",
+      "제55기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "333,605,938",
+        "300,870,903",
+        "258,935,494"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "43,601,051",
+        "32,725,961",
+        "6,566,976"
+      ]
+    },
+    "context": [
+      "(단위 : 백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2025년 01월 01일 부터 2025년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 57 기)",
+    "revenue": "333605938000000",
+    "operating_profit": "43601051000000"
+  },
+  {
+    "company": "SK하이닉스",
+    "year": 2022,
+    "basis": "CFS",
+    "receipt": "20230321001209",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 78,
+    "document_sha256": "9c1c1dbf53a9f87156552ecca561f56b9b29859a8dc873527f3d13c05748d968",
+    "source_file": "data/baseline/2026-10-29/000660-2022-CFS/document-0.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구 분",
+      "제75기",
+      "제74기",
+      "제73기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "44,621,568",
+        "42,997,792",
+        "31,900,418"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "6,809,417",
+        "12,410,340",
+        "5,012,624"
+      ]
+    },
+    "context": [
+      "(단위 :백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2022년 01월 01일 부터 2022년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 75 기)",
+    "revenue": "44621568000000",
+    "operating_profit": "6809417000000"
+  },
+  {
+    "company": "SK하이닉스",
+    "year": 2023,
+    "basis": "CFS",
+    "receipt": "20240319000684",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 87,
+    "document_sha256": "e276b64a391e79bd31ae06e074d8254c1406bf220ef8043c8e1a115e7fe10a1d",
+    "source_file": "data/baseline/2026-10-29/000660-2023-CFS/document-0.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구 분",
+      "제76기",
+      "제75기",
+      "제74기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "32,765,719",
+        "44,621,568",
+        "42,997,792"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "(7,730,313)",
+        "6,809,417",
+        "12,410,340"
+      ]
+    },
+    "context": [
+      "(단위 :백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2023년 01월 01일 부터 2023년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 76 기)",
+    "revenue": "32765719000000",
+    "operating_profit": "-7730313000000"
+  },
+  {
+    "company": "SK하이닉스",
+    "year": 2024,
+    "basis": "CFS",
+    "receipt": "20250319000665",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 91,
+    "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+    "source_file": "data/baseline/2026-10-29/000660-2024-CFS/document-0.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구분",
+      "제77기",
+      "제76기",
+      "제75기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "66,192,960",
+        "32,765,719",
+        "44,621,568"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "23,467,319",
+        "(7,730,313)",
+        "6,809,417"
+      ]
+    },
+    "context": [
+      "(단위: 백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2024년 01월 01일 부터 2024년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 77 기)",
+    "revenue": "66192960000000",
+    "operating_profit": "23467319000000"
+  },
+  {
+    "company": "SK하이닉스",
+    "year": 2025,
+    "basis": "CFS",
+    "receipt": "20260317000635",
+    "status": "verified_original_automatic",
+    "human_review": "pending",
+    "table_index": 97,
+    "document_sha256": "a60977e3b5cc989ee5f056dab5540f2c04bf86cea811beabe9384c30d8990a0c",
+    "source_file": "data/baseline/2026-10-29/000660-2025-CFS/document-2.xml",
+    "original_unit": "백만원",
+    "unit_multiplier": "1000000",
+    "column_index": 1,
+    "header": [
+      "구분",
+      "제78기",
+      "제77기",
+      "제76기"
+    ],
+    "original_rows": {
+      "revenue": [
+        "매출액",
+        "97,146,675",
+        "66,192,960",
+        "32,765,719"
+      ],
+      "operating_profit": [
+        "영업이익",
+        "47,206,319",
+        "23,467,319",
+        "(7,730,313)"
+      ]
+    },
+    "context": [
+      "(단위: 백만원)",
+      "가. 요약연결재무정보",
+      ""
+    ],
+    "period_evidence": "사업연도 2025년 01월 01일 부터 2025년 12월 31일",
+    "term_evidence": "사 업 보 고 서 (제 78기)",
+    "revenue": "97146675000000",
+    "operating_profit": "47206319000000"
+  }
+]

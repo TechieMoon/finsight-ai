@@ -1,0 +1,337 @@
+{
+  "executed_at": "2026-10-29T09:51:09.150438+00:00",
+  "mode": "live_original_snapshot_diagnostic",
+  "original_file_hash_matches": {
+    "numerator": 24,
+    "denominator": 24,
+    "value": 1.0
+  },
+  "service_parser_failures": [
+    {
+      "company": "삼성전자",
+      "year": 2022,
+      "file": "data/baseline/2026-10-29/005930-2022-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        927,
+        71
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2022,
+      "file": "data/baseline/2026-10-29/005930-2022-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        9357,
+        363
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2022,
+      "file": "data/baseline/2026-10-29/005930-2022-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        2394,
+        31
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "file": "data/baseline/2026-10-29/005930-2023-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        798,
+        372
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "file": "data/baseline/2026-10-29/005930-2023-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        9013,
+        365
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "file": "data/baseline/2026-10-29/005930-2023-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        2360,
+        31
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "file": "data/baseline/2026-10-29/005930-2024-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        2477,
+        31
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "file": "data/baseline/2026-10-29/005930-2024-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        9269,
+        364
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "file": "data/baseline/2026-10-29/005930-2024-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        277,
+        20
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "file": "data/baseline/2026-10-29/005930-2025-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        269,
+        20
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "file": "data/baseline/2026-10-29/005930-2025-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        9362,
+        364
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "file": "data/baseline/2026-10-29/005930-2025-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        2434,
+        31
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2022,
+      "file": "data/baseline/2026-10-29/000660-2022-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        854,
+        62
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "file": "data/baseline/2026-10-29/000660-2023-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        828,
+        62
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "file": "data/baseline/2026-10-29/000660-2023-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        10858,
+        50
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "file": "data/baseline/2026-10-29/000660-2023-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        12230,
+        50
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "file": "data/baseline/2026-10-29/000660-2024-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        866,
+        62
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "file": "data/baseline/2026-10-29/000660-2024-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        10997,
+        50
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "file": "data/baseline/2026-10-29/000660-2024-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        12470,
+        34
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "file": "data/baseline/2026-10-29/000660-2025-CFS/document-0.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        11062,
+        50
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "file": "data/baseline/2026-10-29/000660-2025-CFS/document-1.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        12631,
+        34
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "file": "data/baseline/2026-10-29/000660-2025-CFS/document-2.xml",
+      "error_type": "DataError",
+      "cause_type": "ParseError",
+      "position": [
+        843,
+        62
+      ],
+      "service_ingestion": "blocked_for_this_document"
+    }
+  ],
+  "literal_quotes_in_original": {
+    "numerator": 6,
+    "denominator": 6,
+    "value": 1.0
+  },
+  "quotes": [
+    {
+      "case_id": "R03",
+      "quote_key": "e463ecfd978dbc5ed26f",
+      "receipt": "20250319000665",
+      "original_report_literal_match": true,
+      "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+      "normalized_text_offset": 289366,
+      "human_semantic_support": "pending"
+    },
+    {
+      "case_id": "R08",
+      "quote_key": "d5b1916b3bcebbee0ab9",
+      "receipt": "20250319000665",
+      "original_report_literal_match": true,
+      "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+      "normalized_text_offset": 367561,
+      "human_semantic_support": "pending"
+    },
+    {
+      "case_id": "R09",
+      "quote_key": "4d438040b4bdec31ff61",
+      "receipt": "20250319000665",
+      "original_report_literal_match": true,
+      "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+      "normalized_text_offset": 45330,
+      "human_semantic_support": "pending"
+    },
+    {
+      "case_id": "R09",
+      "quote_key": "637242abffc928aeb2b2",
+      "receipt": "20250319000665",
+      "original_report_literal_match": true,
+      "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+      "normalized_text_offset": 45411,
+      "human_semantic_support": "pending"
+    },
+    {
+      "case_id": "R09",
+      "quote_key": "0f545049e7b109c1b725",
+      "receipt": "20250319000665",
+      "original_report_literal_match": true,
+      "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+      "normalized_text_offset": 45506,
+      "human_semantic_support": "pending"
+    },
+    {
+      "case_id": "R09",
+      "quote_key": "2931e2765a8304e2843f",
+      "receipt": "20250319000665",
+      "original_report_literal_match": true,
+      "document_sha256": "faf00aec6c7fe46eff4dcda059c4138d13389d22cef376ba43cdaeead027c455",
+      "normalized_text_offset": 45644,
+      "human_semantic_support": "pending"
+    }
+  ],
+  "note": "Independent tolerant HTML text extraction is for source inspection only, not a production parser fix."
+}

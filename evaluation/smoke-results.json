@@ -1,0 +1,15 @@
+{
+  "api_health": {
+    "status": "ok",
+    "mode": "mock",
+    "live_providers_verified": false,
+    "scope": "annual CFS/OFS, KRW"
+  },
+  "streamlit_health": "ok",
+  "homepage_status": 200,
+  "analyze_status": 200,
+  "financial_rows": 6,
+  "ui_script_against_real_server": "passed",
+  "browser_visual_inspection": "not performed",
+  "mode": "mock"
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finsight-ai"
+version = "0.1.0"
+description = "Evidence-first Korean disclosure analysis agent"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "httpx>=0.28,<1",
+  "pydantic-settings>=2.7,<3", "langgraph>=1,<2", "openai>=2,<3",
+  "chromadb>=1,<2", "streamlit>=1.42,<2", "pandas>=2.2,<3",
+  "defusedxml>=0.7,<1", "beautifulsoup4>=4.13,<5"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[tool.setuptools.packages.find]
+include = ["finsight*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: opt-in real provider calls (requires credentials)"]
+
+[tool.ruff]
+line-length = 110

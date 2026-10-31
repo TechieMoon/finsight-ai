@@ -1,0 +1,275 @@
+[
+  {
+    "id": "R01",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R02",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R03",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {
+      "e463ecfd978dbc5ed26f": null
+    },
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R04",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R05",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R06",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R07",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R08",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {
+      "d5b1916b3bcebbee0ab9": null
+    },
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R09",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {
+      "4d438040b4bdec31ff61": null,
+      "637242abffc928aeb2b2": null,
+      "0f545049e7b109c1b725": null,
+      "2931e2765a8304e2843f": null
+    },
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R10",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R11",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R12",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R13",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R14",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R15",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R16",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R17",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R18",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R19",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R20",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R21",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R22",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R23",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  },
+  {
+    "id": "R24",
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "expected_support": null,
+    "gold_complete": false,
+    "gold_relevant_chunk_ids": [],
+    "quote_support": {},
+    "notes": "Candidate group is NOT a gold label. Review the full frozen corpus."
+  }
+]

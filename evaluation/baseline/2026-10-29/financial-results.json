@@ -1,0 +1,269 @@
+{
+  "executed_at": "2026-10-29T09:50:14.175497+00:00",
+  "mode": "live_snapshot_replay",
+  "requested_company_years": 6,
+  "captured_company_years": 6,
+  "supporting_year": 2022,
+  "financial_value_match": {
+    "numerator": 12,
+    "denominator": 12,
+    "value": 1.0
+  },
+  "financial_value_review_coverage": {
+    "numerator": 12,
+    "denominator": 12,
+    "value": 1.0
+  },
+  "reference_method": "Independent original summary CFS table, period/term/current column and million-KRW unit checked automatically",
+  "human_financial_review_coverage": {
+    "numerator": 0,
+    "denominator": 12,
+    "value": 0.0
+  },
+  "calculation_match_including_null_states": {
+    "numerator": 18,
+    "denominator": 18,
+    "value": 1.0
+  },
+  "calculation_numeric_match": {
+    "numerator": 17,
+    "denominator": 17,
+    "value": 1.0
+  },
+  "calculation_undefined_state_match": {
+    "numerator": 1,
+    "denominator": 1,
+    "value": 1.0
+  },
+  "rows": [
+    {
+      "company": "SK하이닉스",
+      "year": 2023,
+      "basis": "CFS",
+      "receipt": "20240319000684",
+      "values": {
+        "revenue": {
+          "actual": "32765719000000",
+          "expected": "32765719000000",
+          "match": true,
+          "status": "evaluated"
+        },
+        "operating_profit": {
+          "actual": "-7730313000000",
+          "expected": "-7730313000000",
+          "match": true,
+          "status": "evaluated"
+        }
+      },
+      "calculations": {
+        "actual": {
+          "operating_margin_pct": "-23.59",
+          "revenue_growth_pct": "-26.57",
+          "profit_growth_pct": "-213.52"
+        },
+        "expected": {
+          "operating_margin_pct": "-23.59",
+          "revenue_growth_pct": "-26.57",
+          "profit_growth_pct": "-213.52"
+        },
+        "matches": {
+          "operating_margin_pct": true,
+          "revenue_growth_pct": true,
+          "profit_growth_pct": true
+        }
+      },
+      "note": "Calculations use actual live API inputs; source correctness is a separate check."
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2024,
+      "basis": "CFS",
+      "receipt": "20250319000665",
+      "values": {
+        "revenue": {
+          "actual": "66192960000000",
+          "expected": "66192960000000",
+          "match": true,
+          "status": "evaluated"
+        },
+        "operating_profit": {
+          "actual": "23467319000000",
+          "expected": "23467319000000",
+          "match": true,
+          "status": "evaluated"
+        }
+      },
+      "calculations": {
+        "actual": {
+          "operating_margin_pct": "35.45",
+          "revenue_growth_pct": "102.02",
+          "profit_growth_pct": null
+        },
+        "expected": {
+          "operating_margin_pct": "35.45",
+          "revenue_growth_pct": "102.02",
+          "profit_growth_pct": null
+        },
+        "matches": {
+          "operating_margin_pct": true,
+          "revenue_growth_pct": true,
+          "profit_growth_pct": true
+        }
+      },
+      "note": "Calculations use actual live API inputs; source correctness is a separate check."
+    },
+    {
+      "company": "SK하이닉스",
+      "year": 2025,
+      "basis": "CFS",
+      "receipt": "20260317000635",
+      "values": {
+        "revenue": {
+          "actual": "97146675000000",
+          "expected": "97146675000000",
+          "match": true,
+          "status": "evaluated"
+        },
+        "operating_profit": {
+          "actual": "47206319000000",
+          "expected": "47206319000000",
+          "match": true,
+          "status": "evaluated"
+        }
+      },
+      "calculations": {
+        "actual": {
+          "operating_margin_pct": "48.59",
+          "revenue_growth_pct": "46.76",
+          "profit_growth_pct": "101.16"
+        },
+        "expected": {
+          "operating_margin_pct": "48.59",
+          "revenue_growth_pct": "46.76",
+          "profit_growth_pct": "101.16"
+        },
+        "matches": {
+          "operating_margin_pct": true,
+          "revenue_growth_pct": true,
+          "profit_growth_pct": true
+        }
+      },
+      "note": "Calculations use actual live API inputs; source correctness is a separate check."
+    },
+    {
+      "company": "삼성전자",
+      "year": 2023,
+      "basis": "CFS",
+      "receipt": "20240312000736",
+      "values": {
+        "revenue": {
+          "actual": "258935494000000",
+          "expected": "258935494000000",
+          "match": true,
+          "status": "evaluated"
+        },
+        "operating_profit": {
+          "actual": "6566976000000",
+          "expected": "6566976000000",
+          "match": true,
+          "status": "evaluated"
+        }
+      },
+      "calculations": {
+        "actual": {
+          "operating_margin_pct": "2.54",
+          "revenue_growth_pct": "-14.33",
+          "profit_growth_pct": "-84.86"
+        },
+        "expected": {
+          "operating_margin_pct": "2.54",
+          "revenue_growth_pct": "-14.33",
+          "profit_growth_pct": "-84.86"
+        },
+        "matches": {
+          "operating_margin_pct": true,
+          "revenue_growth_pct": true,
+          "profit_growth_pct": true
+        }
+      },
+      "note": "Calculations use actual live API inputs; source correctness is a separate check."
+    },
+    {
+      "company": "삼성전자",
+      "year": 2024,
+      "basis": "CFS",
+      "receipt": "20250311001085",
+      "values": {
+        "revenue": {
+          "actual": "300870903000000",
+          "expected": "300870903000000",
+          "match": true,
+          "status": "evaluated"
+        },
+        "operating_profit": {
+          "actual": "32725961000000",
+          "expected": "32725961000000",
+          "match": true,
+          "status": "evaluated"
+        }
+      },
+      "calculations": {
+        "actual": {
+          "operating_margin_pct": "10.88",
+          "revenue_growth_pct": "16.20",
+          "profit_growth_pct": "398.34"
+        },
+        "expected": {
+          "operating_margin_pct": "10.88",
+          "revenue_growth_pct": "16.20",
+          "profit_growth_pct": "398.34"
+        },
+        "matches": {
+          "operating_margin_pct": true,
+          "revenue_growth_pct": true,
+          "profit_growth_pct": true
+        }
+      },
+      "note": "Calculations use actual live API inputs; source correctness is a separate check."
+    },
+    {
+      "company": "삼성전자",
+      "year": 2025,
+      "basis": "CFS",
+      "receipt": "20260310002820",
+      "values": {
+        "revenue": {
+          "actual": "333605938000000",
+          "expected": "333605938000000",
+          "match": true,
+          "status": "evaluated"
+        },
+        "operating_profit": {
+          "actual": "43601051000000",
+          "expected": "43601051000000",
+          "match": true,
+          "status": "evaluated"
+        }
+      },
+      "calculations": {
+        "actual": {
+          "operating_margin_pct": "13.07",
+          "revenue_growth_pct": "10.88",
+          "profit_growth_pct": "33.23"
+        },
+        "expected": {
+          "operating_margin_pct": "13.07",
+          "revenue_growth_pct": "10.88",
+          "profit_growth_pct": "33.23"
+        },
+        "matches": {
+          "operating_margin_pct": true,
+          "revenue_growth_pct": true,
+          "profit_growth_pct": true
+        }
+      },
+      "note": "Calculations use actual live API inputs; source correctness is a separate check."
+    }
+  ],
+  "collection_errors": []
+}

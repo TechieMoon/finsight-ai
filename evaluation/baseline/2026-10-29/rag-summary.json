@@ -1,0 +1,50 @@
+{
+  "executed_at": "2026-10-29T09:45:14.421220+00:00",
+  "mode": "live_corpus_with_live_openai",
+  "completed": 24,
+  "errors": 0,
+  "retrieval_nonempty_rate_observed": {
+    "numerator": 21,
+    "denominator": 24,
+    "value": 0.875
+  },
+  "quote_literal_match_rate": {
+    "numerator": 6,
+    "denominator": 6,
+    "value": 1.0
+  },
+  "explicit_refusal_count_observed": 21,
+  "semantic_metrics": {
+    "recall_at_3_macro": {
+      "value": null,
+      "reviewed_questions": 0,
+      "definition": "Per-scoped top-3 after production threshold; gold chunk set must be complete."
+    },
+    "adopted_evidence_precision": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "insufficient_evidence_refusal_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "incorrect_refusal_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "human_review_coverage": {
+      "numerator": 0,
+      "denominator": 24,
+      "value": 0.0
+    }
+  },
+  "limitations": [
+    "Literal match is not semantic support.",
+    "Unindexed controls are not evidence of document-level unanswerability.",
+    "Candidate direct/insufficient labels are hypotheses; all human labels initially pending.",
+    "This is a 2024 SK hynix corpus baseline, not multi-company/year retrieval quality."
+  ]
+}
